@@ -1,5 +1,11 @@
 HELP.md
+# IntelliJ IDEA
+.idea/
+
+# Maven/Gradle build output
 target/
+build/
+
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
