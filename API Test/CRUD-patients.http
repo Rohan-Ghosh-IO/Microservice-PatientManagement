@@ -1,0 +1,37 @@
+### Get all patients
+# @name getAllPatients
+GET http://localhost:4000/patients
+Accept: application/json
+
+### Create a new patient
+# @name createPatient
+POST http://localhost:4000/patients/create
+Content-Type: application/json
+
+{
+  "name": "Rohan Ghosh",
+  "email": "rohan.sharma@example.com",
+  "address": "123 Main St, Mumbai",
+  "dateOfBirth": "1990-05-15",
+  "registeredDate": "2025-11-02"
+}
+
+
+### Update an existing patient
+# @name updatePatient
+PUT http://localhost:4000/patients/update/640effeb-0659-4129-9d49-31cacf292398
+Content-Type: application/json
+
+{
+  "name": "Rohan Sharma (Updated)",
+  "email": "rohan.sharma.new@example.com",
+  "address": "456 New Address, Mumbai",
+  "dateOfBirth": "1990-05-15",
+  "registeredDate": "2025-11-02"
+}
+
+
+### Delete a patient by ID
+# @name deletePatient
+DELETE http://localhost:4000/patients/delete/223e4567-e89b-12d3-a456-426614174005
+Accept: application/json
